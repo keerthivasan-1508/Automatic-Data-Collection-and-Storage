@@ -10,10 +10,10 @@ def lambda_handler(event, context):
     # Connect to PostgreSQL database
     conn = psycopg2.connect(
         port=5432,
-        dbname='postgres',
+        dbname='',
         user='',
-        password='guvi1234',
-        host='database-2.czku0sa6evsh.us-east-1.rds.amazonaws.com'
+        password='',
+        host=''
     )
     cursor = conn.cursor()
     
