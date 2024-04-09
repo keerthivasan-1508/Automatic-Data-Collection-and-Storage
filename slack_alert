@@ -3,7 +3,7 @@ import requests
 
 def lambda_handler(event, context):
     message = {'text': 'server down!!!'}
-    url = 'https://hooks.slack.com/services/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'
+    url = 'https://hooks.slack.com/services/T06SJ***'
     try:
         requests.post(url, json=message)
         print("Alert Sent To Slack Successfully..")
